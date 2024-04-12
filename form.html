@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM TAG</title>
+  </head>
+  <body>
+    <a href="Assign3.html">Home</a>
+    <hr />
+    <h1><u>FORM TAG</u></h1>
+    <p>
+      By using < form action="">< /form> tag we can create form in html for web
+      pages.
+    </p>
+    <p>
+      The < form> tag contains <b>action=""</b> attribute to navigate the form
+      page to other pages after submitting to the next page.
+    </p>
+    <p>The < form> tag is used to create an HTML form for user input.</p>
+    <p>
+      The < form> element can contain one or more of the following form elements
+      :
+    </p>
+    <hr />
+    <dl>
+      <dt>< label></dt>
+      <dd>It is used for indicate what we need to give as a input.</dd>
+      <dd><b>Sysntax : < label for="">lable< /label> </b></dd>
+      <br />
+      <dd>Between both label tags we can write our lable.</dd>
+      <dd>We can also skip for tag it is not mandatory.</dd>
+    </dl>
+    <hr />
+    <dl>
+      <dt>< input></dt>
+      <dd>It is used to take input from user.</dd>
+      <dd>
+        Basically in < input> tag it contains two attributes one is
+        <mark>type=""</mark> & <mark>name=""</mark>
+      </dd>
+      <dd>
+        In < input> tag type we need to mention what type of input we need to
+        take .
+      </dd>
+      <dd>
+        In < input> tag name Specifies the name of a form,this helps us to store
+        in database easily.
+      </dd>
+      <dd>Type attributes in < input> tag may different elements :</dd>
+      <ul>
+        <li>
+          Syntax : < input type="text" name="name"> (type="text" used for
+          alphabet input)
+        </li>
+        <label>name</label>
+        <input type="text" name="name" /><br />
+        <ul>
+          <li>
+            For text type input we are havin some attributes names as
+            required,placeholder,minlength & maxlength.
+          </li>
+          <li><b>required </b>is used when that data is mandatory.</li>
+          <li>
+            placeholder will be display in the input area as a defalut text for
+            the user.
+          </li>
+          <li>
+            <b>minlength</b>& <b>maxlength</b> is used to set the minimum and
+            maximum length for any type of input except numbers.
+          </li>
+          <br />
+        </ul>
+
+        <li>
+          Syntax : < input type="tel" name="Mobilenumber" minlength="10"
+          maxlength="10"> (type="tel" used for telephone number input)
+        </li>
+        <label>Mobile number</label>
+        <input
+          type="tel"
+          name="Mobilenumber"
+          minlength="10"
+          maxlength="10"
+        /><br /><br />
+
+        <li>
+          Syntax :< input type="number" min="0" max="18" name="age">
+          (type="number" used for integer input)
+        </li>
+        <label for="">Age</label>
+        <input type="number" min="0" max="18" name="age" /><br />
+        <ul>
+          <li>
+            <b>min</b> & <b>max</b> is used to set minimum and maximum limit for
+            integers.
+          </li>
+        </ul>
+
+        <li>
+          Syntax :< input type="date" name="DOB"> (type="date" used for date
+          input)
+        </li>
+        <label>DOB</label>
+        <input type="date" name="DOB" /><br /><br />
+
+        <li>
+          Syntax :< input type="radio" name="gender"> < input type="radio"
+          name="gender"> (type="radio" used for choosing from multiple optoins)
+        </li>
+        <label for="">Gender</label>
+        <label for="">Male</label>
+        <input type="radio" name="gender" />
+        <label for="">Female</label>
+        <input type="radio" name="gender" /><br />
+        <ul>
+          <li>
+            For each choosing options we need to one input tag with radio type.
+          </li>
+          <br />
+        </ul>
+        <li>
+          Syntax :< input type="file" name="resume"> (type="file" used for files
+          submitting)
+        </li>
+        <label for="">Upload resume</label>
+        <input type="file" name="resume" /><br /><br />
+
+        <li>
+          Syntax :< input type="email" name="email"> (type="email" used for
+          email input)
+        </li>
+        <label for="Email">Email :</label>
+        <input type="email" name="email" /><br />
+        <ul>
+          <li>
+            This input type will accept only email format,for other input it
+            will show error for that.
+          </li>
+          <li>
+            We can write anything related to label but it will not displayed
+            anywhere.
+          </li>
+          <br />
+        </ul>
+
+        <li>
+          Syntax :< input type="password" name="password" minlength="8"
+          maxlength="16"> (type="password" used for password type input)
+        </li>
+        <label for="">Password :</label>
+        <input
+          type="password"
+          name="password"
+          minlength="8"
+          maxlength="16"
+        /><br />
+        <ul>
+          <li>
+            By using type as password we can store store any input type as well
+            as we can hide password also.
+          </li>
+          <li>
+            We are also able to limit the password length by using minlength and
+            maxlength attributes.
+          </li>
+          <br />
+        </ul>
+        <li>
+          Systax :< input type="checkbox"> (type="checkbox" is used for a check
+          box)
+        </li>
+        <input type="checkbox" />
+        <label for="">Agree our terms and conditions</label
+        ><br />
+        <ul>
+          <li>
+            chechbox is used for putting one check box in the page for selecting
+            the option.
+          </li>
+        </ul>
+      </ul>
+    </dl>
+    <hr />
+    <dl>
+      <dt>< textarea></dt>
+      <dd>
+        Textarea tag is used for taking large input from users like address and
+        feedback.
+      </dd>
+      <dd>
+        By using cols and rows attrinutes we can set and change the shape of the
+        textarea.
+      </dd>
+      <ul>
+        <li>
+          Syntax : < textarea cols="30" rows="10" name="address">< /textarea>
+        </li>
+      </ul>
+      <label for="">Address</label>
+      <textarea cols="30" rows="10" name="address"></textarea><br />
+    </dl>
+    <hr />
+    <dl>
+      <dt>< button></dt>
+      <dd>
+        It is used to put one button on web pages like submit,login and signup.
+      </dd>
+      <button>Submit</button>
+    </dl>
+    <hr />
+    <dl>
+      <dt>< select></dt>
+      <dd>Select is used for drop down options for multiple optons.</dd>
+      <dd>It is always used with < option> tag.</dd>
+    </dl>
+    <hr />
+    <dl>
+      <dt>< option></dt>
+      <dd>One option tag holds one option for select drop down options.</dd>
+      <dd>For each and every option we need to write one option tag.</dd>
+      <label for="">Branch</label>
+      <select name="Branch">
+        <option selected>Option</option>
+        <option>CSE</option>
+        <option>EEE</option>
+        <option>ECE</option>
+        <option>MECH</option>
+        <option>IT</option>
+        <option>AERO</option>
+      </select>
+    </dl>
+    <hr />
+  </body>
+</html>
